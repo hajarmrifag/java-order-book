@@ -1,0 +1,76 @@
+{
+  "recorded_at_utc": "2026-10-16T02:45:25Z",
+  "duration_seconds": 15,
+  "jdk": "Temurin 21.0.12.1+1",
+  "cpu": "Apple M5",
+  "heap_mib": 512,
+  "collector": "G1",
+  "jfr_settings": "profile",
+  "workload_source_sha256": "e29bc3f65c49510ac964b88f28299040e103cb61b47756c0cd5fdba3ae6d2737",
+  "verified_batches": 128687104,
+  "verified_checksum": 2573742080,
+  "final_active_orders": 0,
+  "event_counts": {
+    "jdk.ObjectAllocationSample": 4388,
+    "jdk.GarbageCollection": 304,
+    "jdk.ExecutionSample": 1115
+  },
+  "gc_collections_by_name": {
+    "G1New": 304
+  },
+  "gc_sum_of_pauses_ms": 181.936369,
+  "gc_median_sum_of_pauses_ms": 0.535042,
+  "gc_max_sum_of_pauses_ms": 3.028792,
+  "allocation_sample_total_weight_bytes": 96798992552,
+  "top_allocation_classes_by_sample_weight": [
+    {
+      "class": "dev/hajar/orderbook/OrderBook$Trade",
+      "sample_weight_bytes": 26786963032,
+      "share_of_sample_weight": 0.2767277047600486,
+      "samples": 1020
+    },
+    {
+      "class": "dev/hajar/orderbook/OrderBook$Order",
+      "sample_weight_bytes": 24660237064,
+      "share_of_sample_weight": 0.254757166514441,
+      "samples": 979
+    },
+    {
+      "class": "[Ljava/lang/Object;",
+      "sample_weight_bytes": 11943364216,
+      "share_of_sample_weight": 0.12338314584817685,
+      "samples": 762
+    },
+    {
+      "class": "java/util/HashMap$Node",
+      "sample_weight_bytes": 9120969016,
+      "share_of_sample_weight": 0.09422586718658518,
+      "samples": 496
+    },
+    {
+      "class": "java/util/ImmutableCollections$List12",
+      "sample_weight_bytes": 8985105960,
+      "share_of_sample_weight": 0.09282230861207817,
+      "samples": 349
+    },
+    {
+      "class": "dev/hajar/orderbook/OrderBook$Node",
+      "sample_weight_bytes": 8601569176,
+      "share_of_sample_weight": 0.08886011051591548,
+      "samples": 414
+    },
+    {
+      "class": "java/util/TreeMap$Entry",
+      "sample_weight_bytes": 6646559536,
+      "share_of_sample_weight": 0.06866351974096731,
+      "samples": 343
+    },
+    {
+      "class": "dev/hajar/orderbook/OrderBook$Level",
+      "sample_weight_bytes": 27730896,
+      "share_of_sample_weight": 0.0002864791798850911,
+      "samples": 8
+    }
+  ],
+  "limitations": "Sample weights are estimates, not exact allocated bytes. Includes JVM startup. ProfileWorkload is not the JMH workload. No latency or speedup conclusion."
+}
